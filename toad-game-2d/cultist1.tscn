@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ciki726ib702i"]
+
+[ext_resource type="Script" uid="uid://braeue1maa636" path="res://cultist_1.gd" id="1_3u8d0"]
+[ext_resource type="Texture2D" uid="uid://ba7p4bfv4l0uw" path="res://cultist 1.png" id="1_n8ki8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n8ki8"]
+size = Vector2(36, 56)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_3u8d0")
+
+[node name="Cultist1" type="Sprite2D" parent="."]
+texture = ExtResource("1_n8ki8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 23)
+shape = SubResource("RectangleShape2D_n8ki8")
