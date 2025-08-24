@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7mtortku5bh0"]
+
+[ext_resource type="Texture2D" uid="uid://cmj3e5kyaod81" path="res://chaos_symbol.png" id="1_27nhl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vauly"]
+size = Vector2(34, 34)
+
+[node name="chaosSymbol" type="StaticBody2D"]
+
+[node name="ChaosSymbol" type="Sprite2D" parent="."]
+position = Vector2(0, 2)
+texture = ExtResource("1_27nhl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_vauly")
